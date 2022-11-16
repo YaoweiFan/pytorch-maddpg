@@ -1,0 +1,35 @@
+# 算法相关
+seed: 1234
+reward_shaping: True
+reward_mimic: False
+reward_success: 200
+reward_defeat: -200
+reward_scale: 3.0
+#state_last_action: True # False: critic adds last action internally
+#state_timestep_number: False
+episode_limit: 300  # 不起作用
+obs_timestep_number: False
+debug: False
+# 任务相关
+joint_pos_size: 7
+joint_vel_size: 7
+eef_pos_size: 3
+eef_quat_size: 4
+ft_size: 6
+peg_pos_size: 3
+peg_to_hole_size: 3
+robot_state_size: 38
+object_state_size: 19
+n_agents: 2
+action_dim: 3
+obs_choose: "noft"
+trajectory_data_path: "data/trajectory.csv"
+# Mujoco 相关
+has_renderer: False
+has_offscreen_renderer: False
+ignore_done: False
+use_camera_obs: False
+control_freq: 20
+camera_name: "frontview"
+camera_heights: 512
+camera_widths: 512
